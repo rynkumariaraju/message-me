@@ -1,11 +1,37 @@
-Learning Goals Achieved:
+# Message Me – Real-Time Chat Application
 
-🌟 Exploring Semantic UI with Rails:
-Diving into customizing front-end UIs beyond Bootstrap! I've learned how to integrate Semantic UI seamlessly with Rails applications, enhancing both aesthetics and functionality. The flexibility and modern design elements of Semantic UI have opened up new possibilities for UI/UX innovation in my projects.
+A Ruby on Rails chat application with a chatroom landing page, login/logout routes, message creation and an Action Cable WebSocket endpoint for real-time communication.
 
-🌟 Mastering ActionCable for Real-Time Features:
-Delving into the realm of real-time web applications with ActionCable! Building a fully functional chat application using Rails has been an exhilarating experience. From setting up WebSocket connections to handling live messaging, I've grasped the fundamentals of implementing real-time features that elevate user engagement and interaction.
-Key Takeaways:
+## Features represented in the application
 
-    Customizable UI: Semantic UI offers a fresh approach to designing interfaces, providing a robust alternative to Bootstrap.
-    Real-Time Communication: ActionCable's integration in Rails empowers developers to create dynamic, live-updating applications with ease
+- Chatroom page
+- Login and logout routes
+- Message submission
+- Action Cable mounted at `/cable` for WebSocket communication
+
+## Technology
+
+- Ruby 2.7.7
+- Ruby on Rails 5.2
+- SQLite
+- Action Cable
+- Semantic UI
+- jQuery
+- BCrypt
+- Puma
+
+## Run locally
+
+1. Install Ruby 2.7.7 and Bundler.
+2. Clone the repository and enter the project directory.
+3. Install dependencies: `bundle install`.
+4. Prepare the database: `bin/rails db:create db:migrate`.
+5. Start Rails: `bin/rails server`.
+
+Open the local Rails URL shown in the terminal. Real-time messaging uses the Action Cable endpoint configured by the application.
+
+## Learning focus
+
+Rails MVC, WebSockets, Action Cable, real-time messaging concepts, session-based authentication routes and front-end integration with Semantic UI.
+
+See the source code for the current message-broadcasting and connection implementation.
